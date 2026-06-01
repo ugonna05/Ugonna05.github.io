@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/USER/OneDrive/Documents/Ugonna-Nwokedike.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ugonna Emmanuel Nwokedike | Data Scientist &amp; ML Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #1a1a2e;
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        /* Header Section */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 3rem 4rem;
+            position: relative;
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #00d4ff;
+            color: #1e3c72;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .btn-download {
+            background: white;
+            color: #1e3c72;
+            border: none;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            font-family: inherit;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .btn-download:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+
+        .btn-download:active {
+            transform: translateY(0);
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            opacity: 0.95;
+            margin-bottom: 1rem;
+        }
+
+        .location {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        /* Stats Bar */
+        .stats {
+            background: #f8f9fa;
+            padding: 1.5rem 4rem;
+            display: flex;
+            gap: 2rem;
+            border-bottom: 1px solid #e0e0e0;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2a5298;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* Open to Work Banner */
+        .open-to-work {
+            background: #d4edda;
+            color: #155724;
+            padding: 0.75rem 4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            border-left: 4px solid #28a745;
+        }
+
+        .open-to-work .label {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .pill {
+            background: #28a745;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex: 1;
+            min-width: 280px;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .content {
+            flex: 2.5;
+            padding: 2rem;
+        }
+
+        /* Section Styles */
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2a5298;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
+            display: inline-block;
+        }
+
+        .job, .education-item, .project {
+            margin-bottom: 1.5rem;
+        }
+
+        .job-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1e3c72;
+        }
+
+        .company, .school {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #888;
+            font-size: 0.85rem;
+            margin-left: 0.5rem;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: #e0e7ff;
+            color: #2a5298;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 0.25rem;
+            transition: all 0.3s;
+        }
+
+        .skill-tag:hover {
+            background: #2a5298;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .project {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            padding: 1rem;
+            transition: all 0.3s;
+        }
+
+        .project:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .project-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #1e3c72;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .project-lang {
+            background: #667eea;
+            color: white;
+            padding: 0.15rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+        }
+
+        .project-desc {
+            color: #555;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: none;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 0.5rem;
+            }
+            .header, .stats, .open-to-work {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .header-top {
+                flex-direction: column;
+            }
+            .btn-download {
+                align-self: flex-start;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .btn-download, .open-to-work, .stats, .contact-info a[href^="mailto"] {
+                display: none;
+            }
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <div class="header-top">
+                <div class="badge">⭐ Verified Professional</div>
+                <button class="btn-download" onclick="downloadResume()">
+                    📄 Download Resume (PDF)
+                </button>
+            </div>
+            <h1>Ugonna Emmanuel Nwokedike</h1>
+            <div class="title">Data Scientist | Data Analyst | Machine Learning Engineer</div>
+            <div class="location">📍 Eti Osa, Lagos State, Nigeria</div>
+            <div class="contact-info">
+                <span>✉️ ugoemma1988@gmail.com</span>
+                <a href="file:///C:/Users/USER/OneDrive/Documents/Ugonna-Nwokedike.html#">🔗 linkedin.com/in/ugonna-nwokedike</a>
+                <a href="file:///C:/Users/USER/OneDrive/Documents/Ugonna-Nwokedike.html#">💻 github class="com"/Ugonna05</a>
+                <a href="file:///C:/Users/USER/OneDrive/Documents/Ugonna-Nwokedike.html#">🐦 @ugonnaEmm</a>
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat"><span class="stat-number">961</span><span class="stat-label">followers</span></div>
+            <div class="stat"><span class="stat-number">500+</span><span class="stat-label">connections</span></div>
+            <div class="stat"><span class="stat-number">10+</span><span class="stat-label">projects</span></div>
+            <div class="stat"><span class="stat-number">4+</span><span class="stat-label">certifications</span></div>
+        </div>
+
+        <!-- Open to Work -->
+        <div class="open-to-work">
+            <div class="label">🚀 Open to work</div>
+            <div>Eti Osa | On-site · Hybrid · Remote</div>
+            <div class="pill">Show details</div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Sidebar -->
+            <div class="sidebar">
+                <div class="section">
+                    <h3 class="section-title">Education</h3>
+                    <div class="education-item">
+                        <div class="job-title">WorldQuant University</div>
+                        <div class="company">Data Science Program</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="job-title">University of the People, USA</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="job-title">Yaba College of Technology (yabatech)</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="job-title"><noun bnm=""> (National Open University of Nigeria)</noun></div>
+                    </div>
+                    <div class="education-item">
+                        <div class="job-title">NIIT / KSCC VI</div>
+                    </div>
+                    <div class="education-item">
+                        <div class="job-title">Coursera</div>
+                        <div class="company">Multiple Certifications</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Industry</h3>
+                    <p>IT Services and IT Consulting</p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Technical Skills</h3>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">FastAPI</span>
+                    <span class="skill-tag">Jupyter Notebook</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Deep Learning</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Object Detection</span>
+                    <span class="skill-tag">Recommendation Systems</span>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Certifications</h3>
+                    <p>✓ Data Science &amp; ML Facilitator<br>
+                    ✓ Soft Skill (LinkedIn Learning)<br>
+                    ✓ Multiple Coursera Certifications</p>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="content">
+                <div class="section">
+                    <h3 class="section-title">Professional Summary</h3>
+                    <p>Data Science, Data Analysis, and Machine Learning professional with multiple certifications and a passion for building intelligent systems. Experienced facilitator and team lead with a background at Poise Nigeria Limited, NaiLAND Ltd, and PwC. Proven ability to develop end-to-end solutions including sentiment analyzers, recommendation systems, email spam classifiers, and deep learning-based object detection models.</p>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Work Experience</h3>
+                    <div class="job">
+                        <div class="job-title">Tutor – Data Science &amp; ML Facilitator</div>
+                        <div class="company">Poise Nigeria Limited</div>
+                        <div class="date">Current</div>
+                    </div>
+                    <div class="job">
+                        <div class="job-title">Team Lead AI/ML</div>
+                        <div class="company">NaiLAND Ltd</div>
+                    </div>
+                    <div class="job">
+                        <div class="job-title">Data Specialist &amp; Intern</div>
+                        <div class="company">PwC</div>
+                    </div>
+                    <div class="job">
+                        <div class="job-title">Data Science Specialist</div>
+                        <div class="company">Contract / Previous Roles</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">Featured Projects</h3>
+                    
+                    <div class="project">
+                        <div class="project-title">
+                            🧠 FACE_RECOG_NEW 
+                            <span class="project-lang">Jupyter Notebook</span>
+                        </div>
+                        <div class="project-desc">Object detection using deep neural networks. A machine learning project developed with the team at Zummit Africa implementing deep learning for facial recognition.</div>
+                        <div class="project-meta">Updated Mar 21, 2022 | 🌟 Public</div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">
+                            🎭 FastAPI Sentiment Analyzer 
+                            <span class="project-lang">Python</span>
+                        </div>
+                        <div class="project-desc">A sentiment analyzer built with FastAPI. Classifies text sentiment with a lightweight, deployable REST API.</div>
+                        <div class="project-meta">Updated Mar 24, 2022 | 🌟 Public</div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">
+                            📧 Email Spam Classifier 
+                            <span class="project-lang">Jupyter Notebook</span>
+                        </div>
+                        <div class="project-desc">Classifies emails as spam or not-spam based on email content using NLP techniques.</div>
+                        <div class="project-meta">Updated May 9, 2022 | ⭐ Forked</div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">
+                            🎯 NAI_Recommender 
+                            <span class="project-lang">Jupyter Notebook</span>
+                        </div>
+                        <div class="project-desc">A high-end hybrid recommendation system designed for personalized recommendations.</div>
+                        <div class="project-meta">Updated Feb 19 | ⭐ 1 star</div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">
+                            📊 DSN/Bluechip Hackathon 3.0 
+                            <span class="project-lang">Jupyter Notebook</span>
+                        </div>
+                        <div class="project-desc">Hackathon competition project developed as part of Data Science Nigeria / Bluechip hackathon.</div>
+                        <div class="project-meta">Updated last week | ⭐ 2 stars</div>
+                    </div>
+
+                    <div class="project">
+                        <div class="project-title">
+                            🎯 NAI_Bot 
+                            <span class="project-lang">Jupyter Notebook</span>
+                        </div>
+                        <div class="project-desc">A Huggingface/Larma LLM designed for user friendly companionship while visiting the platform.</div>
+                        <div class="project-meta">Updated Feb 19 | ⭐ 1 star</div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <h3 class="section-title">GitHub Activity</h3>
+                    <p>🔹 <strong>FastApi_Sentiment_Analyzer</strong> – FastAPI sentiment API<br>
+                    🔹 <strong>FACE_RECOG_NEW</strong> – Deep neural network object detection<br>
+                    🔹 <strong>NAI_Recommender</strong> – Hybrid recommendation system<br>
+                    🔹 <strong>NAI_Bot</strong> – LLM/Larma,Huggingface finetuned model<br>
+                    🔹 <strong>fast-data-science-ipython-master</strong> – Data science notebooks<br>
+                    </p></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadResume() {
+            // Create a temporary container for the resume content
+            const originalContent = document.querySelector('.container').cloneNode(true);
+            
+            // Remove buttons and interactive elements from cloned version
+            const downloadBtn = originalContent.querySelector('.btn-download');
+            if (downloadBtn) downloadBtn.remove();
+            
+            const openToWork = originalContent.querySelector('.open-to-work');
+            if (openToWork) openToWork.remove();
+            
+            // Create HTML structure for PDF
+            const docHtml = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>Ugonna_Emmanuel_Nwokedike_Resume</title>
+                    <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+                        body {
+                            font-family: 'Segoe UI', Arial, sans-serif;
+                            line-height: 1.5;
+                            padding: 40px;
+                            color: #1a1a2e;
+                            max-width: 1100px;
+                            margin: 0 auto;
+                        }
+                        .header {
+                            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                            color: white;
+                            padding: 30px;
+                            border-radius: 12px;
+                            margin-bottom: 20px;
+                        }
+                        h1 {
+                            font-size: 2.2rem;
+                            margin-bottom: 8px;
+                        }
+                        .title {
+                            font-size: 1.1rem;
+                            margin-bottom: 12px;
+                        }
+                        .location, .contact-info {
+                            font-size: 0.85rem;
+                            margin-top: 8px;
+                        }
+                        .contact-info {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 15px;
+                            margin-top: 12px;
+                        }
+                        .stats {
+                            background: #f0f2f5;
+                            padding: 12px 20px;
+                            border-radius: 8px;
+                            display: flex;
+                            gap: 25px;
+                            margin-bottom: 20px;
+                        }
+                        .stat-number {
+                            font-weight: bold;
+                            color: #2a5298;
+                            font-size: 1.2rem;
+                        }
+                        .main-content {
+                            display: flex;
+                            gap: 30px;
+                        }
+                        .sidebar {
+                            flex: 1;
+                            background: #f8f9fa;
+                            padding: 20px;
+                            border-radius: 12px;
+                        }
+                        .content {
+                            flex: 2;
+                        }
+                        .section {
+                            margin-bottom: 24px;
+                        }
+                        .section-title {
+                            font-size: 1.2rem;
+                            font-weight: 600;
+                            color: #2a5298;
+                            border-bottom: 2px solid #667eea;
+                            padding-bottom: 6px;
+                            margin-bottom: 12px;
+                        }
+                        .job, .education-item, .project {
+                            margin-bottom: 16px;
+                        }
+                        .job-title {
+                            font-weight: 700;
+                            font-size: 1rem;
+                        }
+                        .company, .school {
+                            color: #667eea;
+                        }
+                        .skill-tag {
+                            display: inline-block;
+                            background: #e0e7ff;
+                            color: #2a5298;
+                            padding: 4px 10px;
+                            border-radius: 20px;
+                            font-size: 0.75rem;
+                            margin: 4px;
+                        }
+                        .project {
+                            border: 1px solid #e0e0e0;
+                            padding: 12px;
+                            border-radius: 10px;
+                            margin-bottom: 12px;
+                        }
+                        .project-title {
+                            font-weight: 700;
+                        }
+                        .project-lang {
+                            background: #667eea;
+                            color: white;
+                            padding: 2px 8px;
+                            border-radius: 12px;
+                            font-size: 0.7rem;
+                            margin-left: 8px;
+                        }
+                        @media print {
+                            body {
+                                padding: 0;
+                            }
+                        }
+                    </style>
+                </head>
+                <body>
+                    ${originalContent.outerHTML}
+                    <p style="text-align: center; margin-top: 30px; font-size: 0.7rem; color: #888;">
+                        Ugonna Emmanuel Nwokedike | Updated June 2026
+                    </p>
+                </body>
+                </html>
+            `;
+            
+            // Create blob and trigger download
+            const blob = new Blob([docHtml], { type: 'text/html' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'Ugonna_Emmanuel_Nwokedike_Resume.html';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            URL.revokeObjectURL(link.href);
+            
+            // Show success message (optional)
+            alert('Resume HTML file downloaded! You can open it in a browser and use "Print > Save as PDF" for a PDF version.');
+        }
+    </script>
+
+</body></html>
